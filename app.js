@@ -139,10 +139,6 @@ yText
 
 // 2. Import our .csv file.
 // ========================
-// This data file includes state-by-state demographic data from the US Census
-// and measurements from health risks obtained
-// by the Behavioral Risk Factor Surveillance System.
-
 // Import our CSV data with d3's .csv import method.
 // Retrieve data from the CSV file and execute everything below
 
@@ -228,7 +224,7 @@ function visualize(theData) {
       return parseFloat(d[curY]) * 0.9;
     });
 
-    // .max will grab the largest datum from the selected column.
+    // max will grab the largest datum from the selected column.
     yMax = d3.max(theData, function(d) {
       return parseFloat(d[curY]) * 1.1;
     });
